@@ -1,21 +1,37 @@
 <div class="scrollable">
-  <div class="scrollable-content">
+    <div class="scrollable-content">
 
-    <div class="list-group">
-      <div class="list-group-item">
-        <h1>Welcome<br/>
-        <small>This is a reference site for AA+ compliant markup for modern web applications</small>
-        </h1>
-      </div>
-      <div class="list-group-item media">
-        <div class="pull-right">
-          <i class="fa fa-gamepad feature-icon text-primary"></i>
+        <div class="list-group">
+            <div class="list-group-item">
+                <h1>Welcome to the AA+ accessibility reference</h1>
+
+                <p>Firstly, a little introduction from the README.md.</p>
+
+                <div markdown ng-include="'README.md'"></div>
+            </div>
+
+            <div class="list-group-item">
+
+<markdown>
+## Code snippets
+    <button>Press me</button>
+    <p>I am some text</p>
+
+### Drawbacks
+
+The drawback of using markdown to display your code is that it will need to be relative to the
+file; all indentation is relative to column 0 and not the expected tab indentation.
+
+Moreover if you try to include just a small portion of markdown from an ng-include file you will
+have problems unless the file is headed properly with a markdown h1 tag. (text underlined with at
+least three === signs).
+
+### Please don't
+Please don't include whole markdown files with ng-include as there are a few drawbacks to this
+approach, namely
+</markdown>
+
+            </div>
         </div>
-        <div class="media-body">
-            <h3 class="media-heading"></h3>
-            Open the sidebar and start testing features
-        </div>
-      </div>
     </div>
-  </div>
 </div>

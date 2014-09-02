@@ -1,8 +1,16 @@
 var app = angular.module('MobileAngularUiExamples', [
   "ngRoute",
   "ngTouch",
-  "mobile-angular-ui"
-]);
+  "mobile-angular-ui",
+  "fronter.markdown"
+])
+.config(['markdownConverterProvider', function (markdownConverterProvider) {
+    // options to be passed to Showdown
+    // see: https://github.com/coreyti/showdown#extensions
+    markdownConverterProvider.config({
+        extensions: ['github']
+    });
+}])
 
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/',          {templateUrl: "views/home.html"});

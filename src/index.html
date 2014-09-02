@@ -19,6 +19,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js"></script>
 
     <script src="../bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js"></script>
+
+    <script src="../bower_components/showdown/src/showdown.js"></script>
+    <script src="../bower_components/showdown/src/extensions/github.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-markdown-directive/markdown.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-app="MobileAngularUiExamples" ng-controller="MainController">
@@ -32,16 +37,11 @@
 
       <div class="navbar navbar-app navbar-absolute-top">
         <div class="navbar-brand navbar-brand-center" yield-to="title">
-          <span>Mobile Angular UI</span>
+          <span>Fronter AA+ accessibility reference</span>
         </div>
         <div class="btn-group pull-left">
           <div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle">
             <i class="fa fa-bars"></i> Menu
-          </div>
-        </div>
-        <div class="btn-group pull-right" yield-to="navbarAction">
-          <div ng-click="toggle('rightSidebar')" class="btn btn-navbar">
-            <i class="fa fa-comment"></i> Chat
           </div>
         </div>
       </div>
@@ -64,14 +64,5 @@
       </div>
 
     </div><!-- ~ .app -->
-    <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-48036416-1', 'mobileangularui.com');
-       ga('send', 'pageview');
-     </script>
   </body>
 </html>
