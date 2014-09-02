@@ -6,6 +6,10 @@ Buttons
 =======
 
 ---
+### Aria attributes to know
+* [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+
+---
 
 ### ...without text
 
@@ -13,9 +17,7 @@ Buttons
 * Do I need text in a button?
 
 #### Example
-A button with no text is possible to make accessible using the
-[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
-attribute.
+A button with no text is possible to make accessible using the aria-label attribute.
 
 </markdown>
 
@@ -35,20 +37,23 @@ attribute.
 * Do I need text in a button if it has a screen readable icon?
 * Should a button have a readable icon?
 * Should I use a tag for the button icon?
-* Is the `<i>` tag the correct tag to use for an icon?
+* Is the `i` tag the correct tag to use for an icon?
 * Can I use a background image?
 
 #### Example
+</markdown>
+
+<button aria-label="Delete">
+    <i class="fa fa-times"></i>
+</button>
+
+<markdown>
 ```html
 <button aria-label="Delete">
     <i class="fa fa-times"></i>
 </button>
 ```
 </markdown>
-
-<button aria-label="Delete">
-    <i class="fa fa-times"></i>
-</button>
 
   </div>
 </div>

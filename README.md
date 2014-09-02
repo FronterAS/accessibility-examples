@@ -3,6 +3,16 @@ accessibility-examples
 
 ---
 
+To setup just run
+
+```shell
+bower install
+```
+
+The site is available in the src directory. At this time there is no build step.
+
+---
+
 A repo showing markup and workarounds for AA accessibility
 
 ## Why?
