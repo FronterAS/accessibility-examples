@@ -6,13 +6,7 @@ var app = angular.module('MobileAngularUiExamples', [
 
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/',          {templateUrl: "views/home.html"});
-  $routeProvider.when('/scroll',    {templateUrl: "views/scroll.html"});
-  $routeProvider.when('/toggle',    {templateUrl: "views/toggle.html"});
-  $routeProvider.when('/tabs',      {templateUrl: "views/tabs.html"});
-  $routeProvider.when('/accordion', {templateUrl: "views/accordion.html"});
-  $routeProvider.when('/overlay',   {templateUrl: "views/overlay.html"});
-  $routeProvider.when('/forms',     {templateUrl: "views/forms.html"});
-  $routeProvider.when('/carousel',  {templateUrl: "views/carousel.html"});
+  $routeProvider.when('/buttons',    {templateUrl: "views/buttons.html"});
 });
 
 app.service('analytics', [
