@@ -1,0 +1,23 @@
+{
+  "name": "accessibility-examples",
+  "version": "0.0.1",
+  "homepage": "https://github.com/FronterAS/accessibility-examples",
+  "authors": [
+    "Fronter AS"
+  ],
+  "description": "A reference for minimum AA accessible components.",
+  "keywords": [
+    "accessibility"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mobile-angular-ui": "~1.1.0-beta.29"
+  }
+}
