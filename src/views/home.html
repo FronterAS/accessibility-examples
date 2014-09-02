@@ -5,17 +5,24 @@
             <div class="list-group-item">
                 <h1>Welcome to the AA+ accessibility reference</h1>
 
-                <p>Firstly, a little introduction from the README.md.</p>
-
-                <div markdown ng-include="'README.md'"></div>
+                <p>Add an introduction here</p>
             </div>
 
             <div class="list-group-item">
 
 <markdown>
 ## Code snippets
-    <button>Press me</button>
-    <p>I am some text</p>
+
+The main reason for adding markdown support was to make it easier for you to add your html code to
+the repo, without messing around with encoded characters and pre tags. We can get a consistant view
+across the reference book.
+
+```html
+<button>Press me</button>
+<p>I am some text</p>
+```
+
+---
 
 ### Drawbacks
 
@@ -26,9 +33,14 @@ Moreover if you try to include just a small portion of markdown from an ng-inclu
 have problems unless the file is headed properly with a markdown h1 tag. (text underlined with at
 least three === signs).
 
+Also, it can get a little bit confusing with the opening and closing of markdown tags (like in
+legacy phtql files). Hey ho. Don't like it? Make a pull request.
+
+---
+
 ### Please don't
-Please don't include whole markdown files with ng-include as there are a few drawbacks to this
-approach, namely
+Please don't include whole markdown files with ng-include as I have done for the README file as
+there are a few crazy bugs, like extra spans appearing in the displayed html code in the pages.
 </markdown>
 
             </div>

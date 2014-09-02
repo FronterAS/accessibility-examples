@@ -1,11 +1,54 @@
-<input type="search" class="form-control app-search" placeholder="Search.." />
-
 <div class="scrollable">
-  <div class="scrollable-content">
-    <div class="list-group">
-      <a ng-repeat="item in scrollItems" href="#" class="list-group-item">
-        {{ item }} <i class="fa fa-chevron-right pull-right"></i>
-      </a>
-    </div>
+  <div class="scrollable-content container-fluid section">
+
+<markdown>
+Buttons
+=======
+
+---
+
+### ...without text
+
+#### Questions
+* Do I need text in a button?
+
+#### Example
+A button with no text is possible to make accessible using the
+[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+attribute.
+
+</markdown>
+
+<button aria-label="Create" style="width: 5em; height: 2em;"></button>
+
+<markdown>
+
+```html
+<button aria-label="Create"></button>
+```
+
+---
+
+### ...with an icon
+
+#### Questions
+* Do I need text in a button if it has a screen readable icon?
+* Should a button have a readable icon?
+* Should I use a tag for the button icon?
+* Is the `<i>` tag the correct tag to use for an icon?
+* Can I use a background image?
+
+#### Example
+```html
+<button aria-label="Delete">
+    <i class="fa fa-times"></i>
+</button>
+```
+</markdown>
+
+<button aria-label="Delete">
+    <i class="fa fa-times"></i>
+</button>
+
   </div>
 </div>
