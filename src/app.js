@@ -5,14 +5,14 @@ var app = angular.module('MobileAngularUiExamples', [
 ]);
 
 app.config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('/',          {templateUrl: "home.html"});
-  $routeProvider.when('/scroll',    {templateUrl: "scroll.html"}); 
-  $routeProvider.when('/toggle',    {templateUrl: "toggle.html"}); 
-  $routeProvider.when('/tabs',      {templateUrl: "tabs.html"}); 
-  $routeProvider.when('/accordion', {templateUrl: "accordion.html"}); 
-  $routeProvider.when('/overlay',   {templateUrl: "overlay.html"}); 
-  $routeProvider.when('/forms',     {templateUrl: "forms.html"});
-  $routeProvider.when('/carousel',  {templateUrl: "carousel.html"});
+  $routeProvider.when('/',          {templateUrl: "views/home.html"});
+  $routeProvider.when('/scroll',    {templateUrl: "views/scroll.html"});
+  $routeProvider.when('/toggle',    {templateUrl: "views/toggle.html"});
+  $routeProvider.when('/tabs',      {templateUrl: "views/tabs.html"});
+  $routeProvider.when('/accordion', {templateUrl: "views/accordion.html"});
+  $routeProvider.when('/overlay',   {templateUrl: "views/overlay.html"});
+  $routeProvider.when('/forms',     {templateUrl: "views/forms.html"});
+  $routeProvider.when('/carousel',  {templateUrl: "views/carousel.html"});
 });
 
 app.service('analytics', [
@@ -97,7 +97,7 @@ app.controller('MainController', function($rootScope, $scope, analytics){
 
   $scope.scrollItems = scrollItems;
   $scope.invoice = {payed: true};
-  
+
   $scope.userAgent =  navigator.userAgent;
   $scope.chatUsers = [
     { name: "Carlos  Flowers", online: true },
